@@ -4,8 +4,10 @@ import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import React from 'react';
+import { useRef } from 'react';
 
 const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
+    const inputRef = useRef();
     return (
         <Paper
             id="add"
@@ -34,6 +36,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
                     label="Add Item" 
                     variant="outlined" 
                     autoFocus
+                    inputRef={inputRef}
                     value={newItem}
                     onChange={(e) => setNewItem(e.target.value)}
                 />
@@ -48,6 +51,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
                         },
                         width: '15%'
                     }}
+                    onClick={() => inputRef.current.focus()}
                 >
                     <span style={{ fontSize: '30px' }}>+</span>
                 </Button>
