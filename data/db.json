@@ -1,0 +1,19 @@
+{
+    "items": [
+      {
+        "id": 1,
+        "checked": false,
+        "item": "Green Grapes"
+      },
+      {
+        "id": 2,
+        "checked": false,
+        "item": "Cheddar Cheese"
+      },
+      {
+        "id": 3,
+        "checked": false,
+        "item": "Whole Grain Pasta"
+      }
+    ]
+  }

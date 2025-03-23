@@ -3,7 +3,7 @@ import React from 'react';
 
 const Content = ({ items, handleToggle, handleDelete }) => {
     return (
-        <main className="content">
+        <>
             {items.length ?(
                 <ItemList
                     items={items}
@@ -13,7 +13,7 @@ const Content = ({ items, handleToggle, handleDelete }) => {
             ) : (
                 <p>Your list is empty...</p>
             )}
-        </main>
+        </>
     );
 };
 
