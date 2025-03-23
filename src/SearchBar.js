@@ -6,6 +6,7 @@ const SearchBar = ({ search, setSearch }) => {
     
     return (
         <Paper
+            id="search"
             elevation={3}
             sx={{
                 marginBottom: 2,
@@ -18,7 +19,6 @@ const SearchBar = ({ search, setSearch }) => {
                 sx={{
                     width: '100%'
                 }}
-                id="textField" 
                 role="searchbox"
                 label="Search Items" 
                 variant="outlined" 

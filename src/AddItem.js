@@ -8,6 +8,7 @@ import React from 'react';
 const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
     return (
         <Paper
+            id="add"
             elevation={3}
             sx={{
                 marginBottom: 0.25,
@@ -17,6 +18,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
             }}
         >
             <Box 
+                id="addbox"
                 component="form"
                 sx={{
                     display: 'flex',
@@ -29,7 +31,6 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
                     sx={{
                         width: '85%'
                     }}
-                    id="textField" 
                     label="Add Item" 
                     variant="outlined" 
                     autoFocus
@@ -37,6 +38,7 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
                     onChange={(e) => setNewItem(e.target.value)}
                 />
                 <Button 
+                    id="addbutton"
                     variant="contained" 
                     type="submit"
                     sx={{

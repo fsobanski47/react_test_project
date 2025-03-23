@@ -21,6 +21,7 @@ const LineItem = ({ item, handleToggle, handleDelete }) => {
             }}
         >
             <ListItem
+                id="listitem"
                 key={`${item.id}-${item.checked}`}
                 secondaryAction={
                     <IconButton edge="end">
